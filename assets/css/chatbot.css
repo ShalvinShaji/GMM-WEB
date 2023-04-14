@@ -1,0 +1,281 @@
+
+/*===== GOOGLE FONTS =====*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+/*===== VARIABLES CSS =====*/
+:root {
+
+  /*========== Colors ==========*/
+  --color-primary: crimson;
+  --first-color-alt: #f61642;
+  --title-color: #515050;
+  --text-color: #3e3e3e;
+  --text-color-light: #A6A6A6;
+  --body-color: #FBFEFD;
+  --container-color: #FFFFFF;
+
+  /*========== Font and typography ==========*/
+  --body-font: 'Poppins', sans-serif;
+  --biggest-font-size: 2.25rem;
+  --h1-font-size: 1.5rem;
+  --h2-font-size: 1.25rem;
+  --h3-font-size: 1rem;
+  --name-font-size:.99rem;
+  --normal-font-size: .938rem;
+  --small-font-size: .813rem;
+  --smaller-font-size: .75rem;
+
+  /*========== Font weight ==========*/
+  --font-medium: 500;
+  --font-semi-bold: 600;
+
+  /*========== Margenes ==========*/
+  --mb-1: .5rem;
+  --mb-2: 1rem;
+  --mb-3: 1.5rem;
+  --mb-4: 2rem;
+  --mb-5: 2.5rem;
+  --mb-6: 3rem;
+
+  /*========== z index ==========*/
+  --z-tooltip: 10;
+  --z-fixed: 100;
+}
+
+@media screen and (min-width: 768px){
+  :root{
+    --biggest-font-size: 4rem;
+    --h1-font-size: 2.25rem;
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1.25rem;
+    --name-font-size:1rem;
+    --normal-font-size: .95rem;
+    --small-font-size: .78rem;
+    --smaller-font-size: .75rem;
+  }
+}
+
+
+
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+body {
+    margin: var(--header-height) 0 0 0;
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  background-color: var(--body-color);
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+a {
+  color: crimson;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #f91845;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Raleway", sans-serif;
+}
+
+
+@media (min-width: 500px) {
+  .main-card {
+    width: 96%;
+    max-width: 300px;
+    height: calc(100% - 32px) !important;
+    max-height: 500px;
+    margin: 16px!important;
+  }
+}
+
+.collapsed {
+  width: 48px !important;
+  height: 48px !important;
+  border-radius: 24px !important;
+  margin: 16px!important;
+}
+
+.main-card {
+  background: white;
+  color: white;
+  width: 80%;
+  height: 70%;
+  margin: 16px!important;
+  border-radius: 8px !important;
+
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  right: 0;
+  bottom: 60px;
+  position: fixed;
+  transition: all 0.5s;
+  box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2),0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  z-index: 999;
+}
+
+
+
+
+
+#chatbot_toggle {
+position: absolute;
+right: 0;
+border: none;
+height: 48px;
+width: 48px;
+background: crimson;
+padding: 14px;
+color:white;
+}
+
+#chatbot_toggle i{
+  font-size: var(--h2-font-size);
+}
+
+#chatbot_toggle img{
+position: absolute;
+right: 1px;
+bottom: 1px;
+height: 47px;
+/* padding: var(--mb-1); */
+border-radius: 50%;
+
+}
+
+  
+  .line {
+    height: 1px;
+    background-color: crimson;
+    width: 100%;
+    opacity: 0.2;
+  }
+  .main-title {
+    background-color: crimson;
+    font-size: large;
+    font-weight: bold;
+    display: flex;
+    height: 48px;
+  }
+  .main-title>div{
+    height:48px;
+    width:48px;
+    display:flex;
+    margin-left:8px;
+  }
+  .main-title img {
+    height: 30px;
+    margin: auto;
+    border-radius: 50%;
+  }
+  .main-title > span {
+    margin: auto auto auto 8px;
+  }
+  .chat-area {
+    flex-grow: 1;
+    overflow: auto;
+    border-radius: 8px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+  }
+
+
+
+  .input-message {
+    padding: 8px 16px 8px 16px;
+    flex-grow: 1;
+    border: none;
+  }
+  .input-message:focus {
+    outline: none;
+  }
+  .input-div {
+    height: 48px;
+    display: flex;
+  }
+  .input-div input{
+    width: 290px;
+  }
+  
+  .input-send {
+    background: transparent;
+    width: 48px;
+    height: 48px;
+    right: 0%;
+    border: none;
+    cursor: pointer;
+  }
+  .input-send:hover {
+    background: lavender;
+  }
+  .input-send i {
+    color: #5a5959 !important;
+    margin: 11px 8px;
+  }
+  .chat-message-div {
+    display: flex;
+  }
+  
+  .chat-message-sent {
+    background-color: white;
+    margin: 8px 16px 8px 64px;
+    padding: 8px 16px;
+    animation-name: fadeIn;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 100ms;
+    color: black;
+    border-radius: 8px 8px 2px 8px;
+    background-color: lavender;
+  }
+  
+  .chat-message-received {
+    background-color: white;
+    margin: 8px 64px 8px 16px;
+    padding: 8px 16px;
+    animation-name: fadeIn;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 100ms;
+    color: black;
+    border-radius: 8px 8px 8px 2px;
+    background-color: lavender;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      opacity: 1;
+    }
+  }
+  
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+  

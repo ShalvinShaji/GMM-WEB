@@ -1,0 +1,534 @@
+/*===== GOOGLE FONTS =====*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+/*===== VARIABLES CSS =====*/
+:root {
+
+  /*========== Colors ==========*/
+  --color-primary: crimson;
+  --first-color-alt: #f61642;
+  --title-color: #515050;
+  --text-color: #3e3e3e;
+  --text-color-light: #A6A6A6;
+  --body-color: #FBFEFD;
+  --container-color: #FFFFFF;
+
+  /*========== Font and typography ==========*/
+  --body-font: 'Poppins', sans-serif;
+  --biggest-font-size: 2.25rem;
+  --h1-font-size: 1.5rem;
+  --h2-font-size: 1.25rem;
+  --h3-font-size: 1rem;
+  --name-font-size:.99rem;
+  --normal-font-size: .938rem;
+  --small-font-size: .813rem;
+  --smaller-font-size: .75rem;
+
+  /*========== Font weight ==========*/
+  --font-medium: 500;
+  --font-semi-bold: 600;
+
+  /*========== Margenes ==========*/
+  --mb-1: .5rem;
+  --mb-2: 1rem;
+  --mb-3: 1.5rem;
+  --mb-4: 2rem;
+  --mb-5: 2.5rem;
+  --mb-6: 3rem;
+
+  /*========== z index ==========*/
+  --z-tooltip: 10;
+  --z-fixed: 100;
+}
+
+@media screen and (min-width: 768px){
+  :root{
+    --biggest-font-size: 4rem;
+    --h1-font-size: 2.25rem;
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1.25rem;
+    --name-font-size:1rem;
+    --normal-font-size: .95rem;
+    --small-font-size: .78rem;
+    --smaller-font-size: .75rem;
+  }
+}
+
+
+
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+body {
+    margin: var(--header-height) 0 0 0;
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  background-color: var(--body-color);
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+a {
+  color: crimson;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #f91845;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Raleway", sans-serif;
+}
+
+
+
+
+/*--------------------------------------------------------------
+# GEORGE MATHAN PAGE
+--------------------------------------------------------------*/
+
+.george-mathan img{
+    display: block !important;
+    margin: 0 auto !important;
+    height: 370px;
+    width: 320px;
+    padding: 15px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    margin-bottom: 10px;
+    
+
+
+}
+
+.george-mathan p{
+    text-align: justify !important;
+    font-size: 14px;
+    padding: 15px;
+    padding-bottom: 0;
+    padding-top: 0;
+
+}
+
+@media (max-width: 991px){
+
+  
+    
+    .george-mathan img{
+        display: block !important;
+        margin: 0 auto !important;
+        margin-bottom: 20px !important;
+    }
+}
+
+
+
+/*--------------------------------------------------------------
+# VISION AND MISSION PAGE
+--------------------------------------------------------------*/
+.vision-mission img{
+  
+  height: 280px;
+  width: 450px;
+  object-fit: cover;
+  
+  
+
+
+}
+
+.vision-mission p{
+  text-align: justify !important;
+  font-size: 14px;
+  padding: 0;
+  margin-bottom: var(--mb-1);
+
+}
+ .vision-mission h3{
+  color: #2c4964;
+  font-size: 18px;
+  font-weight: 500px !important;
+  text-transform: uppercase;
+  margin-bottom: var(--mb-1) ;
+  padding: 0;
+  /* color: #353434 !important; */
+  /* margin-bottom: 15px; */
+
+}
+
+
+
+@media (max-width:1200px){
+  .vision-mission img{
+      
+    height: 220px;
+    width: 350px;
+    margin-bottom: 20px !important;
+    /* padding: 15px; */
+
+}
+}
+
+@media (max-width: 990px){
+
+
+  
+  .vision-mission img{
+      
+      height: 250px;
+      width: 400px;
+      /* margin-bottom: var(--mb-2) ; */
+      margin: 0 !important;
+      padding:  var(--mb-1) ;
+      object-fit: cover;
+    
+  }
+
+  .vision-mission .vision-mission-box{
+    /* padding:  var(--mb-1) ; */
+    margin:  var(--mb-2) 0px;
+    margin-bottom: 0;
+
+  }
+
+
+  .vision-mission h3{
+    text-align: center; 
+    
+    margin-bottom: var(--mb-2);
+  
+ } 
+
+}
+
+
+/*--------------------------------------------------------------
+# DEPARTMENTS DETAILED PAGE
+--------------------------------------------------------------*/
+.departments .nav-tabs {
+    border: 0;
+    padding: 15px;
+    background-color: #f0f0f0;
+    border: 1px solid #eee;
+    
+  }
+  .departments li{
+    margin:10px;
+  }
+  
+  .departments .nav-link {
+    border: 0;
+    padding: 15px;
+    color: #3e3e3e;
+    border-radius: 0;
+    cursor: pointer;
+    background-color: white;
+    margin: 0;
+  }
+  
+  .departments .nav-link p{
+    font-size: var(--normal-font-size) !important;
+    /* font-weight: var(--font-semi-bold); */
+
+    transition: 0.3s;
+    margin: 0;
+    /* color: black !important; */
+    transition-duration: .4s;
+    /* text-transform: uppercase; */
+  }
+  
+  
+  .departments .nav-link p {
+    margin-bottom: 0;
+  }
+  .departments .nav-link:hover{
+    background-color: crimson;
+  }
+
+  .departments .nav-link:hover p {
+    color: white !important;
+    /* text-align: center !important; */
+    translate: 20px 0;
+  }
+
+  
+  .departments .nav-link.active {
+    background-color: crimson;
+
+    /* border-color: crimson; */
+  }
+  
+  .departments .nav-link.active p{
+    color: white !important;
+}
+  
+  .departments .tab-pane.active {
+    animation: slide-down 0.5s ease-out;
+  }
+  
+  .departments .tab-pane h3 {
+    font-size: 20px;
+    color: #2c4964;
+    text-transform: uppercase;
+    /* margin: var(--mb-5) 0px; */
+    margin: 0;
+    padding: 0;
+  }
+  .departments .tab-pane .department-img {
+    width: 100%;
+
+  }
+  .departments .tab-pane .department-img img {
+    max-width: 100%;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
+  .departments .tab-pane .department-img p {
+    text-align: justify;
+  }
+
+  .departments .department-description p{
+    text-align: justify;
+    margin-bottom: var(--mb-3);
+
+  }
+
+  .departments .doc {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 15px;
+    margin-right: 10px;
+    margin-bottom: var(--mb-3) ;
+    padding: 10px;
+    box-shadow: 0px 2px 15px rgba(155, 154, 154, 0.455);
+    width: 100vw;
+    
+  }
+
+  .departments .doc-info{
+    padding: var(--mb-2);
+    width:300px ;
+  }
+
+  .departments .doc-info p{
+    margin: 0;
+  }
+  
+  .departments .doc:hover{
+    box-shadow: 0px 2px 15px rgba(49, 47, 47, 0.149);
+  
+  }
+  
+  .departments .doc .pic {
+    overflow: hidden;
+    width: 180px;
+    height: 220px;
+    object-fit: cover !important;
+    display: flex;
+    justify-content: center !important;
+  
+  }
+  
+  .departments .doc .pic img {
+    transition: ease-in-out 0.3s;
+    width: 160px;
+    height: 190px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-top:  12px;
+    
+  
+  }
+  
+  
+  
+  
+  .departments .doc h4 {
+    margin-bottom: 5px;
+    font-weight: 700;
+    font-size: 15px;
+    /* color: #2c4964; */
+  }
+  
+  .departments .doc span {
+    display: block;
+    font-size: 15px;
+    position: relative;
+    font-weight: 600;
+    color: #3e3e3e;
+  }
+
+  .doc-appointment{
+    
+    font-weight: 500;
+    font-size: 14px;
+    padding: 10px 35px;
+    /* border-radius: 25px; */
+    transition: 0.5s;
+    color: white;
+    background-color:crimson ;
+  }
+
+  .doc-appointment:hover{
+    background-color: #db0732;
+    color: white;
+  }
+ 
+  
+  /* .doctors .doc span::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 1px;
+    background: #b2c8dd;
+    bottom: 0;
+    left: 0;
+  } */
+  
+  .departments .doc p {
+    margin: 10px 0 0 0;
+    font-size: 14px;
+  }
+ 
+  
+  @media (max-width: 768px) {
+    /* .departments .tab-pane img {
+      float: none;
+      padding: 0 0 15px 0;
+      max-width: 100%;
+    } */
+
+    .departments .doc {
+      display: flex;
+      flex-direction: column !important;
+      padding: 40px;
+    }
+
+    .departments .doc-info{
+      margin-bottom: 10px;
+    }
+
+    .doc-appointment{
+    
+    
+      padding: 6px 25px;
+      margin-bottom: 10px;
+      
+    }
+
+
+    .departments .department-description p {
+      color: #777777;
+      margin-bottom: var(--mb-5);
+  
+    }
+  }
+
+
+  
+  /* .departments .tab-pane h3 {
+    font-size: 26px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: crimson;
+    text-align: center !important;
+  } */
+  .departments .tab-pane p {
+    color: #3e3e3e;
+
+  }
+
+  
+  
+  @keyframes slide-down {
+    0% {
+      opacity: 0;
+    }
+  
+    100% {
+      opacity: 1;
+    }
+  }
+
+
+  /* BOARD OF DIRECTORS */
+
+  .bo-directors {
+    background: #fff;
+  }
+
+  .bo-directors p{
+    text-align: justify;
+  }
+  
+  .bo-directors  .member {
+    box-shadow: 0px 2px 15px rgba(33, 27, 28, 0.085);
+    padding: 30px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    transition-duration: .3s;
+    width: 300px;
+    height: 150px;
+  }
+
+  @media (max-width: 767px){
+    .bo-directors  .member{
+      width: auto;
+    }
+  }
+
+  
+  .bo-directors  .member:hover{
+    box-shadow: 0px 2px 15px rgba(49, 47, 47, 0.149);
+  
+  }
+  
+  .bo-directors  .member .pic {
+    overflow: hidden;
+    width: 180px;
+    height: 220px;
+    object-fit: cover !important;
+  
+  }
+  
+  .bo-directors  .member .pic img {
+    transition: ease-in-out 0.3s;
+    /* border-radius: 10px; */
+    width: 180px;
+    height: 220px;
+    object-fit: contain;
+  
+  }
+  
+  .bo-directors  .member:hover img {
+    transform: scale(1.1);
+    
+  }
+  
+  
+  
+  .bo-directors  .member h4 {
+    font-weight: 700;
+    font-size: 17px;
+    color: #2c4964;
+  }
+  
+  .bo-directors  .member span {
+    display: block;
+    font-size: var(--normal-font-size);
+    /* margin: var(--mb-1); */
+    position: relative;
+    font-weight: 500;
+  }
+ 
+  
+  
