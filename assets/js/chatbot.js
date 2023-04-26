@@ -329,6 +329,7 @@ function send() {
       document.getElementById("chatbot_toggle").children[0].style.display = "";
       document.getElementById("chatbot_toggle").children[1].style.display =
         "none";
+        
     }
   };
   
