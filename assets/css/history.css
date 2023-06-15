@@ -199,14 +199,15 @@ h6 {
 /*--------------------------------------------------------------
 # ABOUT  SECTION 
 --------------------------------------------------------------*/
-.about img{
-  
-    height: 280px !important;
-    width: 450px !important;
-    object-fit: contain;
-    
-}
 
+/* .about img{
+      
+  height: 365px !important;
+  width: 535px !important;
+  object-fit: contain !important;
+ 
+
+} */
 /*--------------------------------------------------------------
 # DEPARTMENTS DETAILED PAGE
 --------------------------------------------------------------*/
