@@ -60,7 +60,7 @@
 # General
 --------------------------------------------------------------*/
 body {
-    margin: var(--header-height) 0 0 0;
+  margin: var(--header-height) 0 0 0;
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
   background-color: var(--body-color);
@@ -829,7 +829,8 @@ section.features-section {
 # Sections General
 --------------------------------------------------------------*/
 section {
-  padding: 60px 0;
+  /* padding: 60px 0; */
+  padding: var(--h3-font-size);
   overflow: hidden;
 }
 
@@ -839,7 +840,7 @@ section {
 
 .section-title {
   text-align: center;
-  padding-bottom: 30px;
+  padding: 30px;
 }
 
 .section-title h2 {
@@ -1417,11 +1418,8 @@ border: 1px solid crimson;
   position: relative;
   display: flex;
   flex-direction: column;
-  /* background-color: #efefef78; */
-  box-shadow: rgba(133, 132, 132, 0.15) 4px 4px 0px 2.6px;
-
   text-align: justify;
-  padding: 20px;
+  /* padding: 20px; */
 }
 
 .recent-posts .post-box .post-img {

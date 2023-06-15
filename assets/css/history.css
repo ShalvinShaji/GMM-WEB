@@ -99,7 +99,6 @@ h6 {
     margin: 0 auto !important;
     height: 370px;
     width: 320px;
-    padding: 15px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
     margin-bottom: 10px;
     
@@ -110,7 +109,6 @@ h6 {
 .george-mathan p{
     text-align: justify !important;
     font-size: 14px;
-    padding: 15px;
     padding-bottom: 0;
     padding-top: 0;
 
@@ -196,18 +194,7 @@ h6 {
 }
 
 
-/*--------------------------------------------------------------
-# ABOUT  SECTION 
---------------------------------------------------------------*/
 
-/* .about img{
-      
-  height: 365px !important;
-  width: 535px !important;
-  object-fit: contain !important;
- 
-
-} */
 /*--------------------------------------------------------------
 # DEPARTMENTS DETAILED PAGE
 --------------------------------------------------------------*/
