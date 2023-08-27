@@ -1,93 +1,4 @@
 
-/*===== GOOGLE FONTS =====*/
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
-
-/*===== VARIABLES CSS =====*/
-:root {
-
-  /*========== Colors ==========*/
-  --color-primary: crimson;
-  --first-color-alt: #f61642;
-  --title-color: #515050;
-  --text-color: #3e3e3e;
-  --text-color-light: #A6A6A6;
-  --body-color: #FBFEFD;
-  --container-color: #FFFFFF;
-
-  /*========== Font and typography ==========*/
-  --body-font: 'Poppins', sans-serif;
-  --biggest-font-size: 2.25rem;
-  --h1-font-size: 1.5rem;
-  --h2-font-size: 1.25rem;
-  --h3-font-size: 1rem;
-  --name-font-size:.99rem;
-  --normal-font-size: .938rem;
-  --small-font-size: .813rem;
-  --smaller-font-size: .75rem;
-
-  /*========== Font weight ==========*/
-  --font-medium: 500;
-  --font-semi-bold: 600;
-
-  /*========== Margenes ==========*/
-  --mb-1: .5rem;
-  --mb-2: 1rem;
-  --mb-3: 1.5rem;
-  --mb-4: 2rem;
-  --mb-5: 2.5rem;
-  --mb-6: 3rem;
-
-  /*========== z index ==========*/
-  --z-tooltip: 10;
-  --z-fixed: 100;
-}
-
-@media screen and (min-width: 768px){
-  :root{
-    --biggest-font-size: 4rem;
-    --h1-font-size: 2.25rem;
-    --h2-font-size: 1.5rem;
-    --h3-font-size: 1.25rem;
-    --name-font-size:1rem;
-    --normal-font-size: .95rem;
-    --small-font-size: .78rem;
-    --smaller-font-size: .75rem;
-  }
-}
-
-
-
-/*--------------------------------------------------------------
-# General
---------------------------------------------------------------*/
-body {
-    margin: var(--header-height) 0 0 0;
-  font-family: var(--body-font);
-  font-size: var(--normal-font-size);
-  background-color: var(--body-color);
-  color: var(--text-color);
-  line-height: 1.6;
-}
-
-a {
-  color: crimson;
-  text-decoration: none;
-}
-
-a:hover {
-  color: #f91845;
-  text-decoration: none;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Raleway", sans-serif;
-}
-
 
 @media (min-width: 500px) {
   .main-card {
@@ -99,7 +10,7 @@ h6 {
   }
 }
 
-.collapsed {
+.chatbot-collapsed {
   width: 48px !important;
   height: 48px !important;
   border-radius: 24px !important;
@@ -197,6 +108,7 @@ border-radius: 50%;
     padding: 8px 16px 8px 16px;
     flex-grow: 1;
     border: none;
+    font-size: 13px;
   }
   .input-message:focus {
     outline: none;
@@ -229,22 +141,25 @@ border-radius: 50%;
   }
   
   .chat-message-sent {
-    background-color: white;
     margin: 8px 16px 8px 64px;
     padding: 8px 16px;
+    font-size: 13px;
     animation-name: fadeIn;
     animation-iteration-count: 1;
     animation-timing-function: ease-in;
     animation-duration: 100ms;
     color: black;
     border-radius: 8px 8px 2px 8px;
-    background-color: lavender;
+    background-color: crimson;
+    color: white;
+
   }
   
   .chat-message-received {
     background-color: white;
     margin: 8px 64px 8px 16px;
     padding: 8px 16px;
+    font-size: 13px;
     animation-name: fadeIn;
     animation-iteration-count: 1;
     animation-timing-function: ease-in;
@@ -252,6 +167,25 @@ border-radius: 50%;
     color: black;
     border-radius: 8px 8px 8px 2px;
     background-color: lavender;
+    white-space: pre-wrap;
+  }
+  .chat-button-message-received {
+    background-color: white;
+    margin: 3px 16px;
+    padding: 8px 16px;
+    font-size: 13px;
+    animation-name: fadeIn;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 100ms;
+    color: black;
+    background-color: lavender;
+    transition-duration: .3s;
+  }
+
+  .chat-button-message-received:hover{
+    background-color: crimson !important;
+    color: white !important;
   }
   
   @keyframes fadeIn {

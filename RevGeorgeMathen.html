@@ -2,372 +2,448 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GMM Hospital</title>
 
-  <title>Rev. George Mathen</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
-
-  <!-- Favicons -->
-  <link href="assets/icons/favicon.ico" rel="icon">
-
-  <!-- Google Fonts -->
-  <link
-    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
-    rel="stylesheet">
+    <!-- Favicons -->
+    <link href="assets/icons/favicon.ico" rel="icon">
 
 
-  <!-- Boxicons css cdn -->
-  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- ========================= CSS here ========================= -->
+    <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/chatbot.css" />
 
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
-  <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
-  <link rel="stylesheet" href="./assets/css/chatbot.css">
-  <link rel="stylesheet" href="./assets/css/history.css">
-
+    <!-- Boxicons css cdn -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
 </head>
 
 <body>
-
-  <!-- ======= Top Bar ======= -->
-  <div id="topbar" class="w-100 d-flex align-items-center fixed-top bg-danger text-white">
-    <div class="container d-flex justify-content-between border border-bottom border-danger">
-      <div class="contact-info d-flex  align-items-center justify-content-between bg-white ">
-        <div class=" topbar_contact p-2 d-none d-lg-block">
-          <i class='bx bx-envelope '></i> <a href="mailto:contact@example.com" class=" me-3 ">gmmhospital@gmail.com</a>
+    <!-- Topbar Start -->
+    <div class="topbar w-100 bg-danger d-flex justify-content-around align-items-center ">
+        <div class="hospital-contact  text-white">
+            <i class='bx bx-phone '></i>
+            <span class="me-2">0469-2782262</span>
+            <i class='bx bx-envelope '></i>
+            <span> gmmhospital@gmail.com</span>
+        </div>
+        <div class="hospital-social d-none d-md-block">
+            <i class="bx bxl-instagram"></i>
+            <i class="bx bxl-facebook"></i>
 
         </div>
-        <div class="topbar_contact p-2 ">
-          <i class='bx bx-phone' ></i><a href="" class="text-decoration-none "> 0469-2782262</a>
 
-        </div>
-      </div>
-      <div class=" social-links d-flex align-items-center justify-content-center">
-        <a href="https://www.facebook.com/georgemathen.missionhospital?mibextid=ZbWKwL" class="facebook"><i
-            class="bx bxl-facebook"></i></a>
-        <a href="https://instagram.com/gmm_hospital?igshid=YmMyMTA2M2Y=" class="instagram"><i
-            class="bx bxl-instagram"></i></a>
-
-        <!-- <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
-        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></i></a> -->
-      </div>
     </div>
-  </div>
+    <!-- Topbar End -->
 
-  <!-- ======= Header ======= -->
-  <header id="header" class="header fixed-top" data-scrollto-offset="0">
-    <div class="container-fluid d-flex align-items-center justify-content-between">
+    <!-- Header Section Start -->
+    <header class="header navbar-area">
+        <!-- Start Header Middle -->
+        <div class="header-middle">
 
-      <a href="index.html" class="logo d-flex align-items-center scrollto me-auto me-lg-0">
-        <img src="assets/img/logo.jpg" alt="">
-        <div class="hospital-name">
-          <h2 class="text-uppercase">Rev. George Mathen Medical Mission Hospital</h2>
-          <h4>Mallappally East, Kerala, India</h4>
-        </div>
-      </a>
-      <!-- Start navbar -->
+            <div class="container">
+                <div class="row d-flex justify-content-between">
+                    <div class="col-9 col-lg-7 col-xl-4 ">
+                        <!-- Start Header Logo -->
+                        <a href="index.html" class="navbar-logo d-flex align-items-center">
+                            <img src="./assets/img/logo.jpg" alt="">
+                            <div class="gmm-hospital">
+                                <h1 class="text-uppercase hospital-name">Rev. George Mathen</h1>
+                                <h2 class="text-uppercase">Medical Mission Hospital</h2>
+                                <!-- <h4>Mallappally East, Kerala, India</h4> -->
 
-      <nav id="navbar" class="navbar">
-        <ul>
-          <li>
-            <div class="d-flex flex-column align-items-center justify-content-around  ">
-              <div><img src="./assets/img/logo.jpg" alt=""></div>
-              <div>
-                <h3 class="mobile-nav-title text-uppercase">Rev. George Mathen Medical Mission Hospital</h3>
-                <h4 class="mobile-nav-place">Mallappally East, Kerala, India</h4>
-              </div>
+                            </div>
+                        </a>
+                        <!-- End Header Logo -->
+                    </div>
+
+                    <div class="col-2 col-lg-5 col-xl-8 m-0 p-0 row align-items-center justify-content-xl-end">
+
+                        <!-- Start Navbar -->
+                        <nav class="navbar navbar-expand-xl">
+
+                            <button class="navbar-toggler mobile-menu-btn" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="toggler-icon"></span>
+                                <span class="toggler-icon"></span>
+                                <span class="toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent">
+                                <ul id="nav" class="navbar-nav ms-auto">
+                                    <li class="nav-item">
+                                        <a href="index.html" aria-label="Toggle navigation">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="dd-menu collapsed" href="javascript:void(0)" data-bs-toggle="collapse"
+                                            data-bs-target="#submenu-1-2" aria-controls="navbarSupportedContent"
+                                            aria-expanded="false" aria-label="Toggle navigation">About</a>
+                                        <ul class="sub-menu collapse" id="submenu-1-2">
+                                            <li class="nav-item"><a href="RevGeorgeMathen.html">Rev. George
+                                                    Mathen</a></li>
+                                            <li class="nav-item"><a href="VisionMission.html">Vision & Mission</a>
+                                            </li>
+                                            <li class="nav-item"><a href="GoverningBoard.html">Governing Board</a>
+                                            </li>
+
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="Departments.html" aria-label="Toggle navigation"
+                                            onclick="openDepartment('GeneralMedicine')">Departments</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="Facilities.html" aria-label="Toggle navigation">Facilities</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="Doctors.html" aria-label="Toggle navigation">Doctors</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="Careers.html" aria-label="Toggle navigation">Careers</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="Gallery.html" aria-label="Toggle navigation">Gallery</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="Contact.html" aria-label="Toggle navigation">Contact</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                        <!-- End Navbar -->
+                    </div>
+                </div>
             </div>
-          </li>
-          <br>
-          <br>
-          <li><a class="nav-link scrollto" href="index.html">Home</a></li>
-          <li class="dropdown"><a aria-disabled="true"><span>About</span></a>
-            <ul>
-              <li><a href="./RevGeorgeMathen.html">Rev. George Mathen</a></li>
-              <li><a href="./vision_mission.html">Vision & Mission</a></li>
-              <li><a href="./governingBoard.html">Governing Board</a></li>
-            </ul>
-          </li>
-          <li><a class="nav-link scrollto" href="./departments.html">Departments</a></li>
+        </div>
+        <!-- End Header Middle -->
 
-          <li><a class="nav-link scrollto" href="./facilities.html">facilities</a></li>
-          <li><a class="nav-link scrollto" href="./doctors.html">Doctors</a></li>
-          <li><a class="nav-link scrollto" href="./careers.html">Careers</a></li>
-          <li><a class="nav-link scrollto" href="./imageGallery.html">Gallery</a></li>
-          <li><a class="nav-link scrollto" href="./contact.html">Contact</a></li>
-        </ul>
-      </nav>
-      <!-- End navbar -->
-
-      <i class="bx bx-menu mobile-nav-toggle d-none"></i>
-
-
-    </div>
-  </header><!-- End Header -->
-
-
-  <main id="main">
+    </header>
+    <!-- Header Section End -->
 
     <!-- ======= Breadcrumbs Section ======= -->
     <section class="breadcrumbs">
-      <div class="container">
+        <div class="container">
 
-        <div class="d-flex justify-content-between align-items-center">
-          <h2>About</h2>
-          <ol>
-            <li><a href="index.html">Home</a></li>
-            <li>Rev. George Mathen</li>
-          </ol>
+            <div class="d-flex justify-content-between align-items-center">
+                <ol>
+                    <li><a href="index.html">Home</a></li>
+                    <li>Rev. George Mathen</li>
+                </ol>
+            </div>
+
         </div>
-
-      </div>
     </section><!-- End Breadcrumbs Section -->
 
     <section class="inner-page">
-      <div class="container">
+        <div class="container">
 
-        <div class="george-mathan">
+            <div class="george-mathan">
 
-          <div class="section-title">
-            <h2 class="text-uppercase"> Rev. George Mathen (1819-1870)</h2>
-          </div>
+                <div class="section-title">
+                    <h2 class="text-uppercase"> Rev. George Mathen (1819-1870)</h2>
+                </div>
 
-          <div class="row">
-            <div class="col-lg-4 profile-img">
-              <img src="./assets/img/george-mathen/GeorgeMathan.jpg" alt="" srcset="">
+                <div class="row">
+                    <div class="col-lg-4 profile-img">
+                        <img src="./assets/img/george-mathen/GeorgeMathan.jpg" alt="" srcset="">
 
+                    </div>
+                    <div class="col-lg-8">
+                        <p>
+                            The George Mathen Mission Hospital was founded by the Holy Immanuel CSI Church, Mallappally
+                            in 1971 to
+                            build on the inspirational life of Rev. George Mathen. </p>
+                        <p>
+                            Mallappally’s emergence into modernity has a lot to do with the life leadership of Rev.
+                            George Mathen.
+                            He served Mallappally parish for 16 continuous years from 1847 to 1863. Rev. Mathen was the
+                            first native
+                            priest of the Anglican Church, in this area of Kerala. His involvement in and around
+                            Mallappally earned
+                            him the name ‘MallappallilAchen’. His entry to Church and Education marks the bottom to top
+                            revolutionary transformation unleashed at this point of history; by initiating modern
+                            education for the
+                            people of slave cast. Vibrations generated this period triggered multi-faceted reformation
+                            movement
+                            across a large geographical area. Great leaders of Kerala Renaissance; Sreenarayana Guru,
+                            ChattabiSwamikal and Ayyankali were at their childhood at this time.
+                        </p>
+                        <p>
+                            Rev. George Mathen was well known and accepted by the people and the then rulers of
+                            Travancore as a
+                            linguist, educationist, liberator, reformer of great intellectual capacity. </p>
+                        <p>
+                            <b>Linguist: </b> A scholarly grasp of Malayalam enabled Rev. George Mathen to make a signal
+                            contribution to his mother tongue, Malayalam, with the earliest definitive text on Malayalam
+                            grammar,<i><b>‘Malayazhmayude Vyakaranam’ (മലയാഴ്മയുടെ വ്യാകരണം-1863)</b></i> . It codified
+                            grammar
+                            rules for the first time in Malayalam.For this, he was honored as the ‘Father of Malayalam
+                            prose’ Rev.
+                            Mathen as the Editor of India’s first College Magazine: <i><b>VidyaSamgraham</b></i> ;
+                            modelled it as
+                            academic publication in tune with the journals then in circulation in Oxford and Cambridge.
+                            This
+                            magazine carried reports on expanding knowledge streams of the world of that time. Also it
+                            covered the
+                            struggles and aspirations of the people of this land.He regularly contributed essays for the
+                            first
+                            Malayalam periodical <i><b>Jhananikshepam</b></i> on topics as diverse as astronomy,
+                            education and
+                            advaitha. One of the essays that appeared in 'Jhananikshepam' discusses if the earth was
+                            indeed round,
+                            thereby introducing science writing in Malayalam. He was also a prolific essayist. His
+                            forays into
+                            non-fiction include <i><b>Satyavadakhedam</b></i> and <i><b>Vedasamyukthi</b></i>. A highly
+                            reputed
+                            historian of Malayalam literature Ulloor S. ParameswaraIyer stated <i><b>"All in all, George
+                                    Mathan
+                                    built a permanent framework for Malayalam literature and thus made all Malayalis
+                                    (people of Kerala)
+                                    indebted to him, this fact is beyond dispute."</b></i>
+                        </p>
+                        <p>
+                            <b>Educationist:</b> Rev. George Mathen was invited to present his treatise on education and
+                            its
+                            pedagogy at the instances of Sri. Madhava Rao, the then Divan of the state of Travancore.
+                            This
+                            presentation is supposed to be the first of its kind in Travancore.Later the talk was
+                            published as a
+                            book entitled <i><b>Balaabhyasam</b></i>. In addition to emphasizing the importance of
+                            learning in
+                            mother tongue, Rev. Mathen defines the fundamentals of general education in Kerala context.
+                            He convinces
+                            through his thesis 1: Learning occurs through 5 senses, 2: Knowledge is power and 3:
+                            Importance of
+                            character formation.In this work, he argues for Malayalam to be adopted as the medium of
+                            instruction and
+                            language of administration besides cautioning educators of corporeal punishment. Further he
+                            discussed
+                            the techniques and best practices to be adopted to attain the predetermined cognitive levels
+                            which are
+                            at par with today’s approaches. He was avisionary educationist and a shining advocate of
+                            universal
+                            education.
+                        </p>
+                        <p>
+                            <b>Liberator:</b> The abolition of slavery was declared in 1835, by Rani LashmiBai, Queen of
+                            Travancore.
+                            He was one of the earliest advocates of civil rights for the enslaved community in Kerala
+                            who lived in
+                            subhuman conditions under caste slavery. It is a well known fact that Rev. George Mathen was
+                            the
+                            pioneering champion carrying out the liberation of slaves by ensuring basic education and
+                            their entry to
+                            main stream. He started ‘Slave Schools’ for the untouchables in Mallappally and many places
+                            around. His
+                            sympathies lay with the poor and oppressed. Mathen was instrumental in converting
+                            KaipettaHabel and his
+                            family to Christianity in 1854 - the first lower-caste family to convert to Christianity.
+                            The conversion
+                            of Habel's family into Anglican Christianity at Mallappally was historic and encouraged the
+                            conversion
+                            of a large number of lower-caste people, denied of a life of dignity under caste slavery and
+                            un-touchability, into Christianity.
+                        </p>
+                        <p>
+                            <b>Reformer:</b> Rev. Mathen spoke vehemently against the caste practices in Kerala. His
+                            article titled
+                            <i><b>‘KozhuMuthalazhma’</b></i> prescribes the healthy practices to be followed to keep the
+                            employer-employee relation at a humane level. The book authored by Rev. Mathen
+                            <b><i>MarumakkathayathalullaDoshangal</i></b> is a criticism of the matrilineal social
+                            structure
+                            prevalent among one of the prominent communities in Kerala, was instrumental for initiating
+                            their
+                            reformation there also.
+                        </p>
+                        <p>
+                            In his later years, George Mathen actively raised funds to establish the Cambridge Nicholson
+                            Institute
+                            (CNI) in Kottayam. He also oversaw the construction of the institute and served as its
+                            Principal. CNI
+                            was instrumental in spreading English-medium education in Kerala and is today known as the
+                            CNI Teacher’s
+                            Training Institute.
+                        </p>
+                        <p>
+                            In short, the deeply spiritual efforts of Rev. George Mathen freed people from slavery. In
+                            addition; he
+                            worked for liberating language, literature, education, culture and awakened different layers
+                            of people
+                            to march towards modernity and progress.
+                        </p>
+                        <p>
+                            The <b>Rev. George Mathen Mission Hospital, Mallappally</b> is a tribute to the stellar
+                            contributions of
+                            a great man who meant a great deal not only to modern Kerala and Malayalam language but also
+                            to
+                            Mallappally and its people.
+                        </p>
+                    </div>
+                </div>
             </div>
-            <div class="col-lg-8">
-              <p>
-                The George Mathen Mission Hospital was founded by the Holy Immanuel CSI Church, Mallappally in 1971 to
-                build on the inspirational life of Rev. George Mathen. </p>
-              <p>
-                Mallappally’s emergence into modernity has a lot to do with the life leadership of Rev. George Mathen.
-                He served Mallappally parish for 16 continuous years from 1847 to 1863. Rev. Mathen was the first native
-                priest of the Anglican Church, in this area of Kerala. His involvement in and around Mallappally earned
-                him the name ‘MallappallilAchen’. His entry to Church and Education marks the bottom to top
-                revolutionary transformation unleashed at this point of history; by initiating modern education for the
-                people of slave cast. Vibrations generated this period triggered multi-faceted reformation movement
-                across a large geographical area. Great leaders of Kerala Renaissance; Sreenarayana Guru,
-                ChattabiSwamikal and Ayyankali were at their childhood at this time.
-              </p>
-              <p>
-                Rev. George Mathen was well known and accepted by the people and the then rulers of Travancore as a
-                linguist, educationist, liberator, reformer of great intellectual capacity. </p>
-              <p>
-                <b>Linguist: </b> A scholarly grasp of Malayalam enabled Rev. George Mathen to make a signal
-                contribution to his mother tongue, Malayalam, with the earliest definitive text on Malayalam
-                grammar,<i><b>‘Malayazhmayude Vyakaranam’ (മലയാഴ്മയുടെ വ്യാകരണം-1863)</b></i> . It codified grammar
-                rules for the first time in Malayalam.For this, he was honored as the ‘Father of Malayalam prose’ Rev.
-                Mathen as the Editor of India’s first College Magazine: <i><b>VidyaSamgraham</b></i> ; modelled it as
-                academic publication in tune with the journals then in circulation in Oxford and Cambridge. This
-                magazine carried reports on expanding knowledge streams of the world of that time. Also it covered the
-                struggles and aspirations of the people of this land.He regularly contributed essays for the first
-                Malayalam periodical <i><b>Jhananikshepam</b></i> on topics as diverse as astronomy, education and
-                advaitha. One of the essays that appeared in 'Jhananikshepam' discusses if the earth was indeed round,
-                thereby introducing science writing in Malayalam. He was also a prolific essayist. His forays into
-                non-fiction include <i><b>Satyavadakhedam</b></i> and <i><b>Vedasamyukthi</b></i>. A highly reputed
-                historian of Malayalam literature Ulloor S. ParameswaraIyer stated <i><b>"All in all, George Mathan
-                    built a permanent framework for Malayalam literature and thus made all Malayalis (people of Kerala)
-                    indebted to him, this fact is beyond dispute."</b></i>
-              </p>
-              <p>
-                <b>Educationist:</b> Rev. George Mathen was invited to present his treatise on education and its
-                pedagogy at the instances of Sri. Madhava Rao, the then Divan of the state of Travancore. This
-                presentation is supposed to be the first of its kind in Travancore.Later the talk was published as a
-                book entitled <i><b>Balaabhyasam</b></i>. In addition to emphasizing the importance of learning in
-                mother tongue, Rev. Mathen defines the fundamentals of general education in Kerala context. He convinces
-                through his thesis 1: Learning occurs through 5 senses, 2: Knowledge is power and 3: Importance of
-                character formation.In this work, he argues for Malayalam to be adopted as the medium of instruction and
-                language of administration besides cautioning educators of corporeal punishment. Further he discussed
-                the techniques and best practices to be adopted to attain the predetermined cognitive levels which are
-                at par with today’s approaches. He was avisionary educationist and a shining advocate of universal
-                education.
-              </p>
-              <p>
-                <b>Liberator:</b> The abolition of slavery was declared in 1835, by Rani LashmiBai, Queen of Travancore.
-                He was one of the earliest advocates of civil rights for the enslaved community in Kerala who lived in
-                subhuman conditions under caste slavery. It is a well known fact that Rev. George Mathen was the
-                pioneering champion carrying out the liberation of slaves by ensuring basic education and their entry to
-                main stream. He started ‘Slave Schools’ for the untouchables in Mallappally and many places around. His
-                sympathies lay with the poor and oppressed. Mathen was instrumental in converting KaipettaHabel and his
-                family to Christianity in 1854 - the first lower-caste family to convert to Christianity. The conversion
-                of Habel's family into Anglican Christianity at Mallappally was historic and encouraged the conversion
-                of a large number of lower-caste people, denied of a life of dignity under caste slavery and
-                un-touchability, into Christianity.
-              </p>
-              <p>
-                <b>Reformer:</b> Rev. Mathen spoke vehemently against the caste practices in Kerala. His article titled
-                <i><b>‘KozhuMuthalazhma’</b></i> prescribes the healthy practices to be followed to keep the
-                employer-employee relation at a humane level. The book authored by Rev. Mathen
-                <b><i>MarumakkathayathalullaDoshangal</i></b> is a criticism of the matrilineal social structure
-                prevalent among one of the prominent communities in Kerala, was instrumental for initiating their
-                reformation there also.
-              </p>
-              <p>
-                In his later years, George Mathen actively raised funds to establish the Cambridge Nicholson Institute
-                (CNI) in Kottayam. He also oversaw the construction of the institute and served as its Principal. CNI
-                was instrumental in spreading English-medium education in Kerala and is today known as the CNI Teacher’s
-                Training Institute.
-              </p>
-              <p>
-                In short, the deeply spiritual efforts of Rev. George Mathen freed people from slavery. In addition; he
-                worked for liberating language, literature, education, culture and awakened different layers of people
-                to march towards modernity and progress.
-              </p>
-              <p>
-                The <b>Rev. George Mathen Mission Hospital, Mallappally</b> is a tribute to the stellar contributions of
-                a great man who meant a great deal not only to modern Kerala and Malayalam language but also to
-                Mallappally and its people.
-              </p>
-            </div>
-          </div>
+
         </div>
-
-      </div>
     </section>
 
-  </main><!-- End #main -->
 
-  <!-- ======= Footer ======= -->
-  <footer id="footer">
 
-    <div class="footer-top">
-      <div class="container">
-        <div class="row">
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
 
-          <div class="col-lg-3 col-md-6 footer-contact">
-            <h3 class="text-uppercase">Rev. George Mathen Medical Mission Hospital</h3>
-            <p>
-              Mallappally East, P O<br>
-              Pathanamthitta <br>
-              Kerala<br><br>
-              <strong>Phone:</strong> 0469-2782262, 8281161330<br>
-              <strong>Email:</strong> gmmhospital@gmail.com<br>
-            </p>
-          </div>
+        <div class="footer-top">
+            <div class="container">
+                <div class="row footer-content">
 
-          <div class="col-lg-2 col-md-6 footer-links">
-            <h4 class="text-uppercase">Useful Links</h4>
-            <ul>
-              <li><i class='bx bx-chevrons-right'></i> <a href="./index.html" class="text-uppercase">Home</a></li>
-              <li><i class='bx bx-chevrons-right'></i> <a href="./RevGeorgeMathen.html" class="text-uppercase">About us</a></li>
-              <li><i class='bx bx-chevrons-right'></i> <a href="./facilities.html" class="text-uppercase">facilities</a>
-              </li>
-              <li><i class='bx bx-chevrons-right'></i> <a href="./appointment.html"
-                  class="text-uppercase">Appointment</a></li>
-              <li><i class='bx bx-chevrons-right'></i> <a href="./contact.html" class="text-uppercase">Contact</a></li>
-            </ul>
-          </div>
+                    <div class="col-lg-3 col-md-6 footer-contact d-flex flex-column justify-content-around ">
+                        <h3 class="text-uppercase">Rev. George Mathen Medical Mission Hospital</h3>
+                        <p>
+                            Mallappally East, P O<br>
+                            Pathanamthitta,&nbsp;Kerala
+                            <br>
+                            <strong>Phone:</strong> 0469-2782262, 8281161330<br>
+                            <strong>Email:</strong> gmmhospital@gmail.com<br>
+                        <div class="social-links mt-3 pt-3 pt-md-0">
+                            <a href="https://www.facebook.com/georgemathen.missionhospital?mibextid=ZbWKwL"
+                                class="facebook"><i class="bx bxl-facebook"></i></a>
+                            <a href="https://instagram.com/gmm_hospital?igshid=YmMyMTA2M2Y=" class="instagram"><i
+                                    class="bx bxl-instagram"></i></a>
+                            <!-- <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a> -->
+                        </div>
+                        </p>
+                    </div>
 
-          <div class="col-lg-3 col-md-6 footer-links">
-            <h4 class="text-uppercase">Our Departments</h4>
-            <ul>
-              <li><i class='bx bx-chevrons-right'></i> <a href="./departments.html"
-                  class="text-uppercase">General medicine</a></li>
-              <li><i class='bx bx-chevrons-right'></i> <a href="./cardiology.html"
-                  class="text-uppercase">Cardiology</a></li>
-              <li><i class='bx bx-chevrons-right'></i> <a href="./orthopedics.html"
-                  class="text-uppercase">Orthopedics</a></li>
-              <li><i class='bx bx-chevrons-right'></i> <a href="./pediatrics.html"
-                  class="text-uppercase">Pediatrics</a></li>
-              <li><i class='bx bx-chevrons-right'></i> <a href="./nephrology.html"
-                  class="text-uppercase">nephrology</a></li>
-            </ul>
-          </div>
+                    <div class="col-lg-3 col-md-6 footer-links d-flex flex-column justify-content-around">
+                        <h4 class="text-uppercase">Useful Links</h4>
+                        <ul>
+                            <li><i class='bx bx-chevrons-right'></i></i> <a href="./index.html"
+                                    class="text-uppercase">Home</a></li>
+                            <li><i class='bx bx-chevrons-right'></i></i> <a href="./RevGeorgeMathen.html"
+                                    class="text-uppercase">About us</a>
+                            </li>
+                            <li><i class='bx bx-chevrons-right'></i></i> <a href="./Facilities.html"
+                                    class="text-uppercase">facilities</a>
+                            </li>
+                            <li><i class='bx bx-chevrons-right'></i></i> <a href="./Appointment.html"
+                                    class="text-uppercase">Appointment</a></li>
+                            <li><i class='bx bx-chevrons-right'></i></i> <a href="./Contact.html"
+                                    class="text-uppercase">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
 
-          <div class="col-lg-4 col-md-6 footer-newsletter">
-            <h4 class="text-uppercase">Join Our Newsletter</h4>
-            <p>Sign up to get latest health news and tips.</p>
-            <form action="" method="post">
-              <input type="email" name="email"><input type="submit" value="Subscribe">
-            </form>
+                    <div class="col-lg-3 col-md-6 footer-links d-flex flex-column justify-content-around">
+                        <h4 class="text-uppercase">Our Departments</h4>
+                        <ul>
+                            <li><i class='bx bx-chevrons-right'></i> <a href="./Departments.html"
+                                    onclick="openDepartment('GeneralMedicine')" class=" text-uppercase">General
+                                    medicine</a></li>
+                            <li><i class='bx bx-chevrons-right'></i> <a href="./Cardiology.html"
+                                    onclick="openDepartment('Cardiology')" class="text-uppercase">Cardiology</a></li>
+                            <li><i class='bx bx-chevrons-right'></i> <a href="./Orthopedics.html"
+                                    onclick="openDepartment('Orthopedics')" class="text-uppercase">Orthopedics</a></li>
+                            <li><i class='bx bx-chevrons-right'></i> <a href="./Pediatrics.html"
+                                    onclick="openDepartment('Pediatrics')" class="text-uppercase">Pediatrics</a></li>
+                            <li><i class='bx bx-chevrons-right'></i> <a href="./Nephrology.html"
+                                    onclick="openDepartment('Nephrology')" class="text-uppercase">nephrology</a></li>
+                        </ul>
+                    </div>
 
-            <div class="social-links mt-3 pt-3 pt-md-0">
-              <a href="https://www.facebook.com/georgemathen.missionhospital?mibextid=ZbWKwL" class="facebook"><i
-                  class="bx bxl-facebook"></i></a>
-              <a href="https://instagram.com/gmm_hospital?igshid=YmMyMTA2M2Y=" class="instagram"><i
-                  class="bx bxl-instagram"></i></a>
-              <!-- <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-              <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a> -->
+                    <div class="col-lg-3 col-md-6 footer-newsletter">
+                        <h4 class="text-uppercase">Follow us on:</h4>
+                        <div class="social-links mt-3 pt-3 pt-md-0">
+                            <a href="https://www.facebook.com/georgemathen.missionhospital?mibextid=ZbWKwL"
+                                class="facebook"><i class="bx bxl-facebook"></i></a>
+                            <a href="https://instagram.com/gmm_hospital?igshid=YmMyMTA2M2Y=" class="instagram"><i
+                                    class="bx bxl-instagram"></i></a>
+                            <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                            <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+                        </div>
+                    </div>
+
+
+                </div>
             </div>
-          </div>
-
-
-        </div>
-      </div>
-    </div>
-
-     <div class="container d-md-flex py-4">
-
-      <div class="me-md-auto text-center text-md-start">
-        <div class="copyright">
-          <small>&copy; Copyright <strong><span>gmmhospital</span></strong>. All Rights Reserved</small>
         </div>
 
-      </div>
-      <div class="credits text-center">
-        <small> Designed by <a href="#">AZAIC TECH LLP</a> </small>
-      </div>
-      <!-- -->
+        <div class="container d-md-flex py-4">
+
+            <div class="me-md-auto text-center text-md-start">
+                <div class="copyright">
+                    <small>&copy; Copyright <strong><span>gmmhospital</span></strong>. All Rights Reserved</small>
+                </div>
+
+            </div>
+            <div class="credits text-center">
+                <small> Designed by <a href="#">AZAIC TECH LLP</a> </small>
+            </div>
+            <!-- -->
+        </div>
+    </footer>
+
+    <!-- End Footer -->
+
+    <!-- ChatT bot start -->
+    <div id="chatbot" class="main-card chatbot-collapsed">
+        <button id="chatbot_toggle">
+            <img src="./assets/img/chatbot/chatbot.png" alt="" srcset="">
+            <i class='bx bxs-chevron-down'></i> </button>
+        <div class="main-title">
+            <div>
+                <img src="./assets/img/chatbot/chatbot.jpeg" alt="" srcset="">
+
+            </div>
+            <span>Dr. Bobo</span>
+
+        </div>
+        <div class="chat-area" id="message-box">
+
+        </div>
+        <div class="line"></div>
+        <div class="input-div" id="userInput">
+            <input class="input-message" name="message" type="text" id="message" placeholder="Type your message ..." />
+            <button class="input-send" onclick="send()">
+                <i class='bx bxs-send fs-5'></i></button>
+        </div>
     </div>
-  </footer><!-- End Footer -->
 
-  <div id="preloader"></div>
+    <!-- chat bot end -->
 
+    <!-- Back to top start -->
 
-  <!-- chat bot start -->
+    <a href="#" id="backToTopBtn" class="back-to-top d-flex align-items-center justify-content-center"><i
+            class='bx bx-chevron-up'></i></a>
 
-  <div id="chatbot" class="main-card collapsed">
-    <button id="chatbot_toggle">
-      <img src="./assets/img/chatbot/chatbot.png" alt="" srcset="">
-      <i class='bx bxs-chevron-down'></i> </button>
-    <div class="main-title">
-      <div>
-        <img src="./assets/img/chatbot/chatbot.jpeg" alt="" srcset="">
-
-      </div>
-      <span>Dr. Bobo</span>
-
-    </div>
-    <div class="chat-area" id="message-box">
-
-    </div>
-    <div class="line"></div>
-    <div class="input-div" id="userInput">
-      <input class="input-message" name="message" type="text" id="message" placeholder="Type your message ..." />
-      <button class="input-send" onclick="send()">
-        <i class='bx bxs-send fs-5'></i> </button>
-    </div>
-  </div>
-
-  <!-- chat bot end -->
+    <!-- Back to top end -->
 
 
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class='bx bx-chevron-up'></i></a>
-
-  <!-- Boxicon CDN js    -->
-  <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
-
-  <!-- Vendor JS Files -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-
-  <!-- Main JS File -->
-  <script src="assets/js/main.js"></script>
-  <script src="./assets/js/chatbot.js"></script>
 
 
+
+
+
+    <script>
+        function openDepartment(tabId) {
+            // Store the selected tab information in localStorage
+            window.localStorage.setItem('selectedTab', tabId);
+        }
+    </script>
+
+
+
+
+
+
+
+
+
+    <!-- ========================= JS here ========================= -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/chatbot.js"></script>
 </body>
 
 </html>

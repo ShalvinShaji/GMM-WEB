@@ -2,119 +2,125 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
-  <title>Board Of Directors</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GMM Hospital</title>
 
   <!-- Favicons -->
   <link href="assets/icons/favicon.ico" rel="icon">
 
-  <!-- Google Fonts -->
-  <link
-    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
-    rel="stylesheet">
+
+  <!-- ========================= CSS here ========================= -->
+  <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/chatbot.css" />
 
   <!-- Boxicons css cdn -->
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
-  <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
-  <link href="assets/css/chatbot.css" rel="stylesheet">
-  <link rel="stylesheet" href="./assets/css/history.css">
-
-
 </head>
 
 <body>
-
-  <!-- ======= Top Bar ======= -->
-  <div id="topbar" class="w-100 d-flex align-items-center fixed-top bg-danger text-white">
-    <div class="container d-flex justify-content-between border border-bottom border-danger">
-      <div class="contact-info d-flex  align-items-center justify-content-between bg-white ">
-        <div class=" topbar_contact p-2 d-none d-lg-block">
-          <i class='bx bx-envelope '></i> <a href="mailto:contact@example.com" class=" me-3 ">gmmhospital@gmail.com</a>
-
-        </div>
-        <div class="topbar_contact p-2 ">
-          <i class='bx bx-phone' ></i><a href="" class="text-decoration-none "> 0469-2782262</a>
-
-        </div>
-      </div>
-      <div class=" social-links d-flex align-items-center justify-content-center">
-        <a href="https://www.facebook.com/georgemathen.missionhospital?mibextid=ZbWKwL" class="facebook"><i
-            class="bx bxl-facebook"></i></a>
-        <a href="https://instagram.com/gmm_hospital?igshid=YmMyMTA2M2Y=" class="instagram"><i
-            class="bx bxl-instagram"></i></a>
-
-        <!-- <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
-        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></i></a> -->
-      </div>
+  <!-- Topbar Start -->
+  <div class="topbar w-100 bg-danger d-flex justify-content-around align-items-center ">
+    <div class="hospital-contact  text-white">
+      <i class='bx bx-phone '></i>
+      <span class="me-2">0469-2782262</span>
+      <i class='bx bx-envelope '></i>
+      <span> gmmhospital@gmail.com</span>
     </div>
+    <div class="hospital-social d-none d-md-block">
+      <i class="bx bxl-instagram"></i>
+      <i class="bx bxl-facebook"></i>
+
+    </div>
+
   </div>
+  <!-- Topbar End -->
 
-  <!-- ======= Header ======= -->
-  <header id="header" class="header fixed-top" data-scrollto-offset="0">
-    <div class="container-fluid d-flex align-items-center justify-content-between">
+  <!-- Header Section Start -->
+  <header class="header navbar-area">
+    <!-- Start Header Middle -->
+    <div class="header-middle">
 
-      <a href="index.html" class="logo d-flex align-items-center scrollto me-auto me-lg-0">
-        <img src="assets/img/logo.jpg" alt="">
-        <div class="hospital-name">
-          <h2 class="text-uppercase">Rev. George Mathen Medical Mission Hospital</h2>
+      <div class="container">
+        <div class="row d-flex justify-content-between">
+          <div class="col-9 col-lg-7 col-xl-4 ">
+            <!-- Start Header Logo -->
+            <a href="index.html" class="navbar-logo d-flex align-items-center">
+              <img src="./assets/img/logo.jpg" alt="">
+              <div class="gmm-hospital">
+                <h1 class="text-uppercase hospital-name">Rev. George Mathen</h1>
+                <h2 class="text-uppercase">Medical Mission Hospital</h2>
+                <!-- <h4>Mallappally East, Kerala, India</h4> -->
 
-          <h4>Mallappally East, Kerala, India</h4>
-        </div>
-      </a>
-
-      <!-- Start navbar -->
-
-
-      <nav id="navbar" class="navbar">
-        <ul>
-          <li>
-            <div class="d-flex flex-column align-items-center justify-content-around  ">
-              <div><img src="./assets/img/logo.jpg" alt=""></div>
-              <div>
-                <h3 class="mobile-nav-title text-uppercase">Rev. George Mathen Medical Mission Hospital</h3>
-                <h4 class="mobile-nav-place">Mallappally East, Kerala, India</h4>
               </div>
-            </div>
-          </li>
-          <br>
-          <br>
-          <li><a class="nav-link scrollto" href="index.html">Home</a></li>
-          <li class="dropdown"><a aria-disabled="true"><span>About</span> </a>
-            <ul>
-              <li><a href="./RevGeorgeMathen.html">Rev. George Mathen</a></li>
-              <li><a href="./vision_mission.html">Vision & Mission</a></li>
-              <li><a href="./governingBoard.html">Governing Board</a></li>
-            </ul>
-          </li>
-          <li><a class="nav-link scrollto" href="./departments.html">Departments</a></li>
+            </a>
+            <!-- End Header Logo -->
+          </div>
 
-          <li><a class="nav-link scrollto" href="./facilities.html">facilities</a></li>
-          <li><a class="nav-link scrollto" href="./doctors.html">Doctors</a></li>
-          <li><a class="nav-link scrollto" href="./careers.html">Careers</a></li>
-          <li><a class="nav-link scrollto" href="./imageGallery.html">Gallery</a></li>
-          <li><a class="nav-link scrollto" href="./contact.html">Contact</a></li>
-        </ul>
-      </nav>
+          <div class="col-2 col-lg-5 col-xl-8 m-0 p-0 row align-items-center justify-content-xl-end">
 
-      <!-- End navbar -->
+            <!-- Start Navbar -->
+            <nav class="navbar navbar-expand-xl">
 
-      <i class="bx bx-menu mobile-nav-toggle d-none"></i>
+              <button class="navbar-toggler mobile-menu-btn" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="toggler-icon"></span>
+                <span class="toggler-icon"></span>
+                <span class="toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent">
+                <ul id="nav" class="navbar-nav ms-auto">
+                  <li class="nav-item">
+                    <a href="index.html" aria-label="Toggle navigation">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="dd-menu collapsed" href="javascript:void(0)" data-bs-toggle="collapse"
+                      data-bs-target="#submenu-1-2" aria-controls="navbarSupportedContent" aria-expanded="false"
+                      aria-label="Toggle navigation">About</a>
+                    <ul class="sub-menu collapse" id="submenu-1-2">
+                      <li class="nav-item"><a href="RevGeorgeMathen.html">Rev. George
+                          Mathen</a></li>
+                      <li class="nav-item"><a href="VisionMission.html">Vision & Mission</a>
+                      </li>
+                      <li class="nav-item"><a href="GoverningBoard.html">Governing Board</a>
+                      </li>
 
-
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a href="Departments.html" aria-label="Toggle navigation"
+                      onclick="openDepartment('GeneralMedicine')">Departments</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="Facilities.html" aria-label="Toggle navigation">Facilities</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="Doctors.html" aria-label="Toggle navigation">Doctors</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="Careers.html" aria-label="Toggle navigation">Careers</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="Gallery.html" aria-label="Toggle navigation">Gallery</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="Contact.html" aria-label="Toggle navigation">Contact</a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+            <!-- End Navbar -->
+          </div>
+        </div>
+      </div>
     </div>
-  </header><!-- End Header -->
+    <!-- End Header Middle -->
 
+  </header>
+  <!-- Header Section End -->
 
   <main id="main">
 
@@ -123,7 +129,6 @@
       <div class="container">
 
         <div class="d-flex justify-content-between align-items-center">
-          <h2>Governing Board</h2>
           <ol>
             <li><a href="index.html">Home</a></li>
             <li>Governing Board</li>
@@ -134,7 +139,7 @@
     </section><!-- End Breadcrumbs Section -->
 
 
-    <!-- ======= History Section ======= -->
+    <!-- ======= Governing Board Section ======= -->
 
     <section id="appointment" class="bo-directors inner-page">
       <div class="container">
@@ -227,143 +232,168 @@
           </div>
         </div>
       </div>
-    </section><!-- End Governing board Section -->
+    </section>
 
 
-  </main><!-- End #main -->
+    <!-- End Governing board Section -->
 
-  <!-- ======= Footer ======= -->
-  <footer id="footer">
 
-    <div class="footer-top">
-      <div class="container">
-        <div class="row">
 
-          <div class="col-lg-3 col-md-6 footer-contact">
-            <h3 class="text-uppercase">Rev. George Mathen Medical Mission Hospital</h3>
-            <p>
-              Mallappally East, P O<br>
-              Pathanamthitta <br>
-              Kerala<br><br>
-              <strong>Phone:</strong> 0469-2782262, 8281161330<br>
-              <strong>Email:</strong> gmmhospital@gmail.com<br>
-            </p>
-          </div>
 
-          <div class="col-lg-2 col-md-6 footer-links">
-            <h4 class="text-uppercase">Useful Links</h4>
-            <ul>
-              <li><i class='bx bx-chevrons-right'></i> <a href="./index.html" class="text-uppercase">Home</a></li>
-              <li><i class='bx bx-chevrons-right'></i> <a href="./RevGeorgeMathen.html" class="text-uppercase">About us</a></li>
-              <li><i class='bx bx-chevrons-right'></i> <a href="./facilities.html" class="text-uppercase">facilities</a>
-              </li>
-              <li><i class='bx bx-chevrons-right'></i> <a href="./appointment.html"
-                  class="text-uppercase">Appointment</a></li>
-              <li><i class='bx bx-chevrons-right'></i> <a href="./contact.html" class="text-uppercase">Contact</a></li>
-            </ul>
-          </div>
 
-          <div class="col-lg-3 col-md-6 footer-links">
-            <h4 class="text-uppercase">Our Departments</h4>
-            <ul>
-              <li><i class='bx bx-chevrons-right'></i> <a href="./departments.html"
-                  class="text-uppercase">General medicine</a></li>
-              <li><i class='bx bx-chevrons-right'></i> <a href="./cardiology.html"
-                  class="text-uppercase">Cardiology</a></li>
-              <li><i class='bx bx-chevrons-right'></i> <a href="./orthopedics.html"
-                  class="text-uppercase">Orthopedics</a></li>
-              <li><i class='bx bx-chevrons-right'></i> <a href="./pediatrics.html"
-                  class="text-uppercase">Pediatrics</a></li>
-              <li><i class='bx bx-chevrons-right'></i> <a href="./nephrology.html"
-                  class="text-uppercase">nephrology</a></li>
-            </ul>
-          </div>
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
 
-          <div class="col-lg-4 col-md-6 footer-newsletter">
-            <h4 class="text-uppercase">Join Our Newsletter</h4>
-            <p>Sign up to get latest health news and tips.</p>
-            <form action="" method="post">
-              <input type="email" name="email"><input type="submit" value="Subscribe">
-            </form>
+      <div class="footer-top">
+        <div class="container">
+          <div class="row footer-content">
 
-            <div class="social-links mt-3 pt-3 pt-md-0">
-              <a href="https://www.facebook.com/georgemathen.missionhospital?mibextid=ZbWKwL" class="facebook"><i
-                  class="bx bxl-facebook"></i></a>
-              <a href="https://instagram.com/gmm_hospital?igshid=YmMyMTA2M2Y=" class="instagram"><i
-                  class="bx bxl-instagram"></i></a>
-              <!-- <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+            <div class="col-lg-3 col-md-6 footer-contact d-flex flex-column justify-content-around ">
+              <h3 class="text-uppercase">Rev. George Mathen Medical Mission Hospital</h3>
+              <p>
+                Mallappally East, P O<br>
+                Pathanamthitta,&nbsp;Kerala
+                <br>
+                <strong>Phone:</strong> 0469-2782262, 8281161330<br>
+                <strong>Email:</strong> gmmhospital@gmail.com<br>
+              <div class="social-links mt-3 pt-3 pt-md-0">
+                <a href="https://www.facebook.com/georgemathen.missionhospital?mibextid=ZbWKwL" class="facebook"><i
+                    class="bx bxl-facebook"></i></a>
+                <a href="https://instagram.com/gmm_hospital?igshid=YmMyMTA2M2Y=" class="instagram"><i
+                    class="bx bxl-instagram"></i></a>
+                <!-- <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
               <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a> -->
+              </div>
+              </p>
             </div>
+
+            <div class="col-lg-3 col-md-6 footer-links d-flex flex-column justify-content-around">
+              <h4 class="text-uppercase">Useful Links</h4>
+              <ul>
+                <li><i class='bx bx-chevrons-right'></i></i> <a href="./index.html" class="text-uppercase">Home</a></li>
+                <li><i class='bx bx-chevrons-right'></i></i> <a href="./RevGeorgeMathen.html"
+                    class="text-uppercase">About us</a>
+                </li>
+                <li><i class='bx bx-chevrons-right'></i></i> <a href="./Facilities.html"
+                    class="text-uppercase">facilities</a>
+                </li>
+                <li><i class='bx bx-chevrons-right'></i></i> <a href="./Appointment.html"
+                    class="text-uppercase">Appointment</a></li>
+                <li><i class='bx bx-chevrons-right'></i></i> <a href="./Contact.html" class="text-uppercase">Contact</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-lg-3 col-md-6 footer-links d-flex flex-column justify-content-around">
+              <h4 class="text-uppercase">Our Departments</h4>
+              <ul>
+                <li><i class='bx bx-chevrons-right'></i> <a href="./Departments.html"
+                    onclick="openDepartment('GeneralMedicine')" class=" text-uppercase">General
+                    medicine</a></li>
+                <li><i class='bx bx-chevrons-right'></i> <a href="./Cardiology.html"
+                    onclick="openDepartment('Cardiology')" class="text-uppercase">Cardiology</a></li>
+                <li><i class='bx bx-chevrons-right'></i> <a href="./Orthopedics.html"
+                    onclick="openDepartment('Orthopedics')" class="text-uppercase">Orthopedics</a></li>
+                <li><i class='bx bx-chevrons-right'></i> <a href="./Pediatrics.html"
+                    onclick="openDepartment('Pediatrics')" class="text-uppercase">Pediatrics</a></li>
+                <li><i class='bx bx-chevrons-right'></i> <a href="./Nephrology.html"
+                    onclick="openDepartment('Nephrology')" class="text-uppercase">nephrology</a></li>
+              </ul>
+            </div>
+
+            <div class="col-lg-3 col-md-6 footer-newsletter">
+              <h4 class="text-uppercase">Follow us on:</h4>
+              <div class="social-links mt-3 pt-3 pt-md-0">
+                <a href="https://www.facebook.com/georgemathen.missionhospital?mibextid=ZbWKwL" class="facebook"><i
+                    class="bx bxl-facebook"></i></a>
+                <a href="https://instagram.com/gmm_hospital?igshid=YmMyMTA2M2Y=" class="instagram"><i
+                    class="bx bxl-instagram"></i></a>
+                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="container d-md-flex py-4">
+
+        <div class="me-md-auto text-center text-md-start">
+          <div class="copyright">
+            <small>&copy; Copyright <strong><span>gmmhospital</span></strong>. All Rights Reserved</small>
           </div>
 
+        </div>
+        <div class="credits text-center">
+          <small> Designed by <a href="#">AZAIC TECH LLP</a> </small>
+        </div>
+        <!-- -->
+      </div>
+    </footer>
+
+    <!-- End Footer -->
+
+    <!-- ChatT bot start -->
+    <div id="chatbot" class="main-card chatbot-collapsed">
+      <button id="chatbot_toggle">
+        <img src="./assets/img/chatbot/chatbot.png" alt="" srcset="">
+        <i class='bx bxs-chevron-down'></i> </button>
+      <div class="main-title">
+        <div>
+          <img src="./assets/img/chatbot/chatbot.jpeg" alt="" srcset="">
 
         </div>
+        <span>Dr. Bobo</span>
+
+      </div>
+      <div class="chat-area" id="message-box">
+
+      </div>
+      <div class="line"></div>
+      <div class="input-div" id="userInput">
+        <input class="input-message" name="message" type="text" id="message" placeholder="Type your message ..." />
+        <button class="input-send" onclick="send()">
+          <i class='bx bxs-send fs-5'></i></button>
       </div>
     </div>
 
-     <div class="container d-md-flex py-4">
+    <!-- chat bot end -->
 
-      <div class="me-md-auto text-center text-md-start">
-        <div class="copyright">
-          <small>&copy; Copyright <strong><span>gmmhospital</span></strong>. All Rights Reserved</small>
-        </div>
+    <!-- Back to top start -->
 
-      </div>
-      <div class="credits text-center">
-        <small> Designed by <a href="#">AZAIC TECH LLP</a> </small>
-      </div>
-      <!-- -->
-    </div>
-  </footer>
-  <!-- End Footer -->
+    <a href="#" id="backToTopBtn" class="back-to-top d-flex align-items-center justify-content-center"><i
+        class='bx bx-chevron-up'></i></a>
 
-  <div id="preloader"></div>
+    <!-- Back to top end -->
 
 
-  <!-- chat bot start -->
 
-  <div id="chatbot" class="main-card collapsed">
-    <button id="chatbot_toggle">
-      <img src="./assets/img/chatbot/chatbot.png" alt="" srcset="">
-      <i class='bx bxs-chevron-down'></i>  
-    </button>
-    <div class="main-title">
-      <div>
-        <img src="./assets/img/chatbot/chatbot.jpeg" alt="" srcset="">
 
-      </div>
-      <span>Dr. Bobo</span>
 
-    </div>
-    <div class="chat-area" id="message-box">
 
-    </div>
-    <div class="line"></div>
-    <div class="input-div" id="userInput">
-      <input class="input-message" name="message" type="text" id="message" placeholder="Type your message ..." />
-      <button class="input-send" onclick="send()">
-        <i class='bx bxs-send fs-5'></i> </button>
-    </div>
-  </div>
 
-  <!-- chat bot end -->
+    <script>
+      function openDepartment(tabId) {
+        // Store the selected tab information in localStorage
+        window.localStorage.setItem('selectedTab', tabId);
+      }
+    </script>
 
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class='bx bx-chevron-up'></i></a>
 
-  <!-- Boxicon CDN js    -->
-  <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
 
-  <!-- Vendor JS Files -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
 
-  <!-- Main JS File -->
-  <script src="assets/js/main.js"></script>
-  <script src="./assets/js/chatbot.js"></script>
 
+
+
+
+
+    <!-- ========================= JS here ========================= -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/chatbot.js"></script>
 </body>
 
 </html>
